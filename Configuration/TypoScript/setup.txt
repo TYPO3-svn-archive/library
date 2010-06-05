@@ -1,0 +1,19 @@
+plugin.tx_library.persistence {
+		storagePid = 5
+	}
+
+plugin.tx_library._CSS_DEFAULT_STYLE (
+	input.f3-form-error {
+		background-color:#FF9F9F;
+		border: 1px #FF0000 solid;
+	}
+)
+
+config.tx_extbase{
+	persistence {
+		classes { 
+			Tx_Library_Domain_Model_Article.mapping.tableName = tt_news
+			Tx_Library_Domain_Model_Category.mapping.tableName = tt_news_cat
+		} 
+	}
+}

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<T3locallang>
+	<meta type="array">
+		<type>module</type>
+		<description>Language labels for the library extension in the FRONTEND</description>
+	</meta>
+	<data type="array">
+		<languageKey index="default" type="array">
+			<label index="tx_library_domain_model_article">Article</label>
+			<label index="tx_library_domain_model_article.title">title</label>
+			<label index="tx_library_domain_model_article.author">author</label>
+			<label index="tx_library_domain_model_article.datetime">datetime</label>
+			<label index="tx_library_domain_model_article.bodytext">bodytext</label>
+			<label index="tx_library_domain_model_article.short">short</label>
+			<label index="tx_library_domain_model_article.category">category</label>
+			<label index="tx_library_domain_model_category">Category</label>
+			<label index="tx_library_domain_model_category.title">title</label>
+			<label index="tx_library_domain_model_category.description">description</label>
+		</languageKey>
+	</data>
+</T3locallang>

@@ -1,0 +1,10 @@
+<ul>
+<f:for each="{articles}" as="article">
+	<li>
+	{article.title}
+		<f:for each="{article.category}" as="category">
+		 <br />{category.title}
+		 </f:for>
+	</li>
+</f:for>
+</ul>
