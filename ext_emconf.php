@@ -12,13 +12,13 @@
 
 $EM_CONF[$_EXTKEY] = array(
 	'title' => 'library',
-	'description' => 'Library for SFI',
+	'description' => 'Library based on tt_news.',
 	'category' => 'plugin',
 	'author' => 'Dmitri Pisarev',
 	'author_email' => 'dimaip@gmail.com',
 	'author_company' => 'SFI',
 	'shy' => '',
-	'dependencies' => 'cms,extbase,fluid',
+	'dependencies' => 'cms,extbase,fluid,mvc_extjs',
 	'conflicts' => '',
 	'priority' => '',
 	'module' => '',
@@ -29,12 +29,13 @@ $EM_CONF[$_EXTKEY] = array(
 	'modify_tables' => '',
 	'clearCacheOnLoad' => 0,
 	'lockType' => '',
-	'version' => '0.0.0',
+	'version' => '0.0.1',
 	'constraints' => array(
 		'depends' => array(
 			'cms' => '',
 			'extbase' => '',
 			'fluid' => '',
+			'mvc_extjs' => '',
 		),
 		'conflicts' => array(
 		),

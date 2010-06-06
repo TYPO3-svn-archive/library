@@ -6,12 +6,11 @@ Tx_Extbase_Utility_Extension::configurePlugin(
 	'Pi1',
 	array(
 		'Index' => 'index',
-		'Article' => 'index, new, create, edit, update, delete',
-		'Category' => 'index, new, create, edit, update, delete',
+		'Article' => 'index',
+		'Category' => 'index',
 	),
 	array(
-		'Article' => 'index,create, update, delete',
-		'Category' => 'create, update, delete',
+		'Article' => 'index'
 	)
 );
 
