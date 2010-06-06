@@ -2,7 +2,7 @@
 /***************************************************************
 *  Copyright notice
 *
-*  (c)  TODO - INSERT COPYRIGHT
+*  (c)  2010 Dmitri Pisarev
 *  All rights reserved
 *
 *  This script is part of the TYPO3 project. The TYPO3 project is

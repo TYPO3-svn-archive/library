@@ -57,7 +57,7 @@ class Tx_Library_ViewHelpers_ToolbarViewHelper extends Tx_MvcExtjs_ViewHelpers_J
                 $this->extJsNamespace
         );
     }
-//TODO: commit
+
     /**
      * Renders the js code for a toolbar of categories supplied
      *
