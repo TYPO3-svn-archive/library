@@ -58,10 +58,8 @@ class Tx_Library_Controller_IndexController extends Tx_Extbase_MVC_Controller_Ac
      * @return string The rendered list action
      */
     public function indexAction() {
-        $limit = 2;
         $categories = $this->categoryRepository->findAll();
         $this->view->assign('categories', $categories);
-        $this->view->assign('limit', $limit);
     }
 
 }

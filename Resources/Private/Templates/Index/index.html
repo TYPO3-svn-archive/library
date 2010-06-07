@@ -1,7 +1,7 @@
 {namespace lib=Tx_Library_ViewHelpers}
-<lib:toolbar categories="{categories}" limit="{limit} "/>
-
+<lib:toolbar categories="{categories}" />
 {namespace mvcextjs=Tx_MvcExtjs_ViewHelpers}
+<mvcextjs:jsCode.Settings settings="{settings}" />
 <mvcextjs:includeInlineJsFromFile name="Before.library.js" />
 <mvcextjs:Fe.pluginContainer divContainerId="library" enableExtJsDebug="true" >
 	<mvcextjs:jsCode.store remoteSort="true" autoLoad="{'params':{

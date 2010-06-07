@@ -62,19 +62,31 @@ class Tx_Library_ViewHelpers_ToolbarViewHelper extends Tx_MvcExtjs_ViewHelpers_J
      * Renders the js code for a toolbar of categories supplied
      *
      * @param array() $categories
-     * @param int $limit
      * @return void
      */
-    public function render($categories,  $limit) {
-        $buttons = '[';
+    public function render($categories) {
+        $buttons = '['; //create buttons array for toolbar
+        //create the 'all' button
+        $buttons .= "{
+                icon: '../typo3/sysext/t3skin/icons/gfx/refresh_n.gif',
+                cls: 'x-btn-text-icon',
+                text: 'All',
+                handler: function() {
+                    astore.setBaseParam('tx_library_pi1[category]','');
+                    astore.load({params:{
+                        'tx_library_pi1[start]':0,
+                        'tx_library_pi1[limit]':pageSize
+                    }});
+                }
+           },";
         foreach ($categories as $category) {
             $buttons .= "{
                 icon: '../typo3/sysext/t3skin/icons/gfx/refresh_n.gif',
                 cls: 'x-btn-text-icon',
                 text: '".$category->getTitle()."',
                 handler: function() {
+                    astore.setBaseParam('tx_library_pi1[category]',".$category->getUid().");
                     astore.load({params:{
-                        'tx_library_pi1[category]':".$category->getUid().",
                         'tx_library_pi1[start]':0,
                         'tx_library_pi1[limit]':pageSize
                     }});

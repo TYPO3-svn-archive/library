@@ -1,4 +1,2 @@
 //This file is loaded BEFORE other ViewHelpers
-
-// TODO: hardcoded limit
-var pageSize = 10; // Set limit
+var pageSize = Number(Library.Index.Settings['limit']); // Set limit

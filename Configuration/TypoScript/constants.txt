@@ -1,0 +1,10 @@
+plugin.tx_library{
+    settings {
+        # cat=plugin.tx_library_pi1//a; type=int+; label=Records by page
+        limit = 10
+    }
+    persistence {
+		 # cat=plugin.tx_library_pi1//a; type=int+; label=Default storage PID
+		storagePid =
+    }
+}

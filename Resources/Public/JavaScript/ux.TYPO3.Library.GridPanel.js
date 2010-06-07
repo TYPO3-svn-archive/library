@@ -7,7 +7,7 @@ Library.Index.GridPanel = Ext.extend(Ext.grid.GridPanel, {
             store: astore,
             columns: Library.Index.ArticleColumns,
             loadMask: {
-                msg: 'загрузка ...'
+                msg: 'loading ...'
             },
             tbar: new Library.Index.toolbar,
             bbar: new Ext.PagingToolbar({

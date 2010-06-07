@@ -1,2 +1,2 @@
-{namespace mvcextjs=Tx_MvcExtjs_ViewHelpers}
-<mvcextjs:Json.StoreReadResponse data="{articles}" total="{total}" />
+{namespace mvcextjs=Tx_Library_ViewHelpers}
+<mvcextjs:StoreReadResponse data="{articles}" total="{total}" />

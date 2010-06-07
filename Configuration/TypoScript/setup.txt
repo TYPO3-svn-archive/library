@@ -1,7 +1,11 @@
-## TODO: hardcoded pid
-plugin.tx_library.persistence {
-		storagePid = 5
-	}
+plugin.tx_library{
+    settings{
+        limit = {$plugin.tx_library.settings.limit}
+    }
+    persistence {
+        storagePid = {$plugin.tx_library.persistence.storagePid}
+    }
+}
 
 config.tx_extbase{
 	persistence {
